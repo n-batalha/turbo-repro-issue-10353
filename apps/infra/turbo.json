@@ -3,7 +3,8 @@
   "tasks": {
     "deploy": {
       "dependsOn": ["^web#build"],
-      "cache": false
+      "cache": false,
+      "env": ["SST_ENV_FOR_TEST"]
     }
   }
 }

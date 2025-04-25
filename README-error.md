@@ -10,9 +10,8 @@ Pick a profile (in `~/.aws/config`), and set it in `apps/infra/sst.config.ts` (c
 pnpm install
 
 # see the error
-turbo run deploy
+turbo run --env-mode=loose deploy
 
 # confirm it works in sst (note, we force an error anyway)
 pnpm run -F infra deploy
 ```
-
